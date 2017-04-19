@@ -74,27 +74,20 @@
 		</div>
 		<br>
 		<div class="col-md-6">
-			<form action="" class="form-inline">
-				<div class="form-group">
-					<label class="sr-only" for="nombre">Nombre:</label>
-					<input class="form-control" id="nombre" type="text" placeholder="Nombre:">
-				</div>
-				
-				<div class="form-group">
-					<div class="input-group">
-						<label class="sr-only" for="correo">Correo:</label>
-						<div class="input-group-addon">@</div>
-						<input class="form-control" id="" type="text" placeholder="Correo:" name="">
-					</div>	
-				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="" id="">Recuérdame
-					</label>	
-				</div>
-				<button class="btn btn-primary">Sign in</button>
-			</form>
-		</div>
+		    <form id="signin" class="navbar-form navbar-right" role="form">
+                <div class="input-group">
+	                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	                <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+                </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+						
 	</header>
 	<div class="container-fluid">
 		<section>
