@@ -185,19 +185,6 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     	<div class="signup-form-container">
     
         	<form role="form" id="register-form" autocomplete="off" method="post">
@@ -257,7 +244,7 @@
                         <span class="help-block" id="error"></span>                    
                    </div>
                             
-             </div>
+  			</div>
                         
                         
             </div>
@@ -272,9 +259,9 @@
             </form>
             
            </div>
-
+  </div>
            <br>
-
+<div>
 		<section class="main row">
 			<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
 				<h3>Información</h3>
@@ -308,7 +295,9 @@
 	</footer>
 		
 
-
+	<!-- Latest compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 
