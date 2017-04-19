@@ -1,14 +1,4 @@
-<?php
 
-require_once("functions.php");
-
-if (!isset($_SESSION["usuario"])) {
-	header("location:index.php");exit;
-}
-
-$usuarios = dameTodos();
-
-?>
 
 
 <!DOCTYPE html>
