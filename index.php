@@ -1,59 +1,14 @@
 <?php
 
-	
+require_once("functions.php");
 
-	$usernameDefault ="";
-	$mailDefault = "";
-	$celDefault="";
-	$password1Default="";
-	$password2Default="";
+if (!isset($_SESSION["usuario"])) {
+	header("location:index.php");exit;
+}
 
+$usuarios = dameTodos();
 
-	$errores = [];
-
-	if($_POST) {
-		header("Location:registroexitoso.php");exit;
-	}
-
-	if ($_POST)
-		{
-			
-			
-			$postUsername = $_POST["username"];
-			$postMail= $_POST["mail"];
-			$postCel = $_POST["cel"];
-			$postPassword1 = $_POST["password1"];
-			$postPassword2 = $_POST["password2"];
-			
-
-
-			if(strlen($postUsername) < 8){
-				$errores["username"] = "El usuario debe tener 8 caracteres como mínimo.";
-			}
-
-			if(strlen($postMail)===""){
-				$errores["mail"] = "Debes introducir tu dirección email.";
-			}
-			 else if (!filter_var($postMail, FILTER_VALIDATE_EMAIL)) {
-					$errores["mail"] = "La dirección de email que usaste, no posee el formato correcto";
-				}
-
-			if(strlen($postCel) ===0){
-				$errores["cel"] = "Debes introducir tu número de celular";
-			}
-
-			if(strlen($postPassword1)===""){
-				$errores["password1"] = "Debes introducir una contraseña.";
-			}
-				if(strlen($postPassword2)!==($postPassword1)){
-				$errores["password1"] = "Las contraseñas no coinciden.";
-			}
-		
-				var_dump($errores);
-			}
-				
-	?>
-
+?>
 
 
 <!DOCTYPE html>
