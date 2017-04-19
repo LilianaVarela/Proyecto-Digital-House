@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,7 +84,119 @@
 		</div>
 	</div>
 
+
+
 	<div class="container">
+
+
+
+			<!-- Latest compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  REGISTRARME
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="signup-form-container">
+    
+        	<form role="form" id="register-form" autocomplete="off" method="post">
+          		<div class="form-header">
+          			<h3 class="form-title"><i class="fa fa-user"></i> Registrate</h3>
+                </div>
+         
+         <div class="form-body">
+                      
+            <div class="form-group">
+                <div class="input-group">
+                   	<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                   	<input name="username" type="text" class="form-control" placeholder="Usuario" value="<?=$usernameDefault?>">
+                </div>
+                <span class="help-block" id="error"></span>
+            </div>
+                        
+            <div class="form-group">
+                <div class="input-group">
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                   <input name="mail" type="text" class="form-control" placeholder="Correo Electrónico" value="<?=$mailDefault?>">
+                </div> 
+                <span class="help-block" id="error"></span>                     
+            </div>
+                        
+              <div class="row">
+                        
+                   <div class="form-group col-lg-12">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                        <input name="cel" type="code" class="form-control" placeholder="Celular" value="<?=$celDefault?>">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+
+                   <div class="form-group col-lg-12">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-home"></span></div>
+                        <input name="direccion" type="text" class="form-control" placeholder="Dirección">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+
+                    <div class="form-group col-lg-6">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="password1" id="password" type="password" class="form-control" placeholder="Introduce la Contraseña" value="<?=$password1Default?>">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+                            
+                   <div class="form-group col-lg-6">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="password2" type="password" class="form-control" placeholder="Repite la Contraseña" value="<?=$password2Default?>">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+                            
+             </div>
+                        
+                   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     	<div class="signup-form-container">
     
@@ -198,12 +307,10 @@
 		</div>
 	</footer>
 		
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-		aieudhaeohdoahdojqwodhqowhdoiqhwdoqwhdioqwodh
-		wsdoewhfdowhfopwhefwuefew
-		weofewohfowenfewnofnwoenfoewnofnweonfoiwnlkasnfihwesbgvoewlshdvowiesjfd
+
+
+
+
 </body>
 </html>
