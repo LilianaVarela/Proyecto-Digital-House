@@ -37,7 +37,12 @@
 			  		<h1>Bienvenido, partner!</h1>
 			  			<p>JHSJK es la primera Red Social, que a la vez funciona como un e-commerce. No importa si eres un microempresario en busca de potenciar su negocio o un usuario comun. Al unirte a JSGHAGJ, automáticamente de conviertes en partner y puedes obtener beficios palpables vendiendo (Empresario) o ayudando a vender (Promotor). </p>
 			  			
-			  			<p><button class="btn btn-lg btn-outline fade-color col-md-offset-5" href="#" role="button"> ¡Descubre más!</button></p>
+			  		<!-- Button trigger modal -->
+							<p><button type="button" class="btn btn-primary btn-lg btn-outline fade-color col-md-offset-5" href="#" data-toggle="modal" data-target="#exampleModalLong" role="button">
+  								REGISTRARME
+							</button></p>	
+
+
 			</div>
 		</section>
 	</div>
@@ -90,15 +95,6 @@
 
 
 
-			<!-- Latest compiled and minified JavaScript -->
-		<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  REGISTRARME
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
