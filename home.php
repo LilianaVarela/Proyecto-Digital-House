@@ -77,27 +77,12 @@
 		<h1>LOGO<small>Texto Secundario</small>
 		</h1>
 	</div>
-	<br>
+
 
 	<div class="col-md-6">
-		<form action="login.php" method="post" id="signin" class="navbar-form navbar-right" role="form">
-			<div>
-				<input type="checkbox" name="recordar_usu"> Recuerdame 
-			</div>
-            <div class="input-group">
-	           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i>
-	           </span>
-	            <input id="email" type="text" class="form-control" name="mail" value="" placeholder="Email Address">                                        
-            </div>
-
-            <div class="input-group">
-               <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i>
-               </span>
-                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
-            </div>
-				<button type="submit" class="btn btn-primary">Login
-				</button>
-        </form>
+		<div class="navbar-form navbar-right">
+				
+        </div>
 	</div>
   </header>
 <!-- FIN Cabecera con LogIn -->
@@ -110,11 +95,17 @@
 		  </h1>
 		    <p>JHSJK es la primera Red Social, que a la vez funciona como un e-commerce. No importa si eres un microempresario en busca de potenciar su negocio o un usuario comun. Al unirte a JSGHAGJ, automáticamente de conviertes en partner y puedes obtener beficios palpables vendiendo (Empresario) o ayudando a vender (Promotor). </p>
 			  			
-			<!-- Button trigger modal -->
+			
+				
 			<p>
-			<button type="button" class="btn btn-primary btn-lg btn-outline fade-color col-md-offset-5" href="#" data-toggle="modal" data-target="#exampleModalLong" role="button">
+
+			<a href="log.php"><button class="btn btn-primary btn-lg btn-outline fade-color col-md-offset-4" type="submit" value="">INGRESAR
+				</button></a>
+<!-- Button trigger modal --
+			<button type="button" class="btn btn-primary btn-lg btn-outline fade-color col-md-offset-1" href="#" data-toggle="modal" data-target="#exampleModalshort" role="button">
   				REGISTRARME
 			</button>
+
 			</p>
 			<!-- FIN Button trigger modal -->	
 		</div>
@@ -167,78 +158,9 @@
 		</div>
 	</div>
 <!-- FIN Comodo Facil Efectivo Social -->
-
-
-<!-- Infiormacion al pie -->  
-  <div class="container">
-		<section class="main row">
-			<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-				<h3>Información</h3>
-					<ul class="list-group listas">
-						<a><p><li class="list-group-item">
-							<span type="button"  href="" data-toggle="modal" data-target="#exampleModalLong" role="button">
-  								Preguntas Frecuentes
-							</span>
- 							  </li>
- 							</p>
- 						</a>
-						<a><p><li class="list-group-item">
-							<span type="button"  href="" data-toggle="modal" data-target="#exampleModalLong" role="button">
-  								Bases y Condiciones
-							</span>
- 							  </li>
- 							</p>
- 						</a>
- 						<a><p><li class="list-group-item">
-							<span type="button"  href="" data-toggle="modal" data-target="#exampleModalLong" role="button">
-  								Sobre Nosotros
-							</span>
- 							  </li>
- 							</p>
- 						</a>
-					</ul> 
-			</aside>
-
-			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-				<h3>Columna</h3>
-				<p>
-					parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo
-				</p> 
-					
-			</article>
-		</section>
-				<br>
-				<br>
-				<br>
-
-		
-	</div>
-<!-- FIN Infiormacion al pie -->
-
-<!-- Footer -->
- <footer class="container">
-		<div>
-			<h3>PYME SOCIAL</h3>
-		</div>
- </footer>
-<!-- Footer -->
-
-
-<!-- Modal -->
- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      	<div class="modal-header">
-        	<h5 class="modal-title" id="exampleModalLongTitle">REGISTRATE EN 1 MINUTO</h5>
-        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          	<span aria-hidden="true">&times;</span>
-        	</button>
-      	</div>
-      <div class="modal-body">
-       <div class="signup-form-container">
-    
-        	
-    <form method="POST" action="home.php" enctype="multipart/form-data" role="form" id="register-form" autocomplete="off" >
+<div class="container">
+		<div class="container">
+   <form method="POST" action="home.php" enctype="multipart/form-data" role="form" id="register-form" autocomplete="off" >
 
 		<div class="form-header">
           			<h3 class="form-title"><i class="fa fa-user"></i> Registrate</h3>
@@ -337,6 +259,77 @@
 <!-- FIN Modal -->  
 
 </form>
+</div>
+</div>
+<!-- Infiormacion al pie -->  
+  <div class="container">
+		<section class="main row">
+			<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+				<h3>Información</h3>
+					<ul class="list-group listas">
+						<a><p><li class="list-group-item">
+							<span type="button"  href="" data-toggle="modal" data-target="#exampleModalLong" role="button">
+  								Preguntas Frecuentes
+							</span>
+ 							  </li>
+ 							</p>
+ 						</a>
+						<a><p><li class="list-group-item">
+							<span type="button"  href="" data-toggle="modal" data-target="#exampleModalLong" role="button">
+  								Bases y Condiciones
+							</span>
+ 							  </li>
+ 							</p>
+ 						</a>
+ 						<a><p><li class="list-group-item">
+							<span type="button"  href="" data-toggle="modal" data-target="#exampleModalLong" role="button">
+  								Sobre Nosotros
+							</span>
+ 							  </li>
+ 							</p>
+ 						</a>
+					</ul> 
+			</aside>
+
+			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+				<h3>Columna</h3>
+				<p>
+					parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo parrafo
+				</p> 
+					
+			</article>
+		</section>
+				<br>
+				<br>
+				<br>
+
+		
+	</div>
+<!-- FIN Infiormacion al pie -->
+
+<!-- Footer -->
+ <footer class="container">
+		<div>
+			<h3>PYME SOCIAL</h3>
+		</div>
+ </footer>
+<!-- Footer -->
+
+<!-- Modal --
+ <div class="modal fade" id="exampleModalshort" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      	<div class="modal-header">
+        	<h5 class="modal-title" id="exampleModalLongTitle">REGISTRATE EN 1 MINUTO</h5>
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          	<span aria-hidden="true">&times;</span>
+        	</button>
+      	</div>
+      <div class="modal-body">
+       <div class="signup-form-container"-->
+    
+        	
+ 
     
   <!-- Latest compiled and minified JavaScript -->
 		<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>

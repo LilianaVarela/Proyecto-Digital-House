@@ -9,38 +9,31 @@ if (!isset($_SESSION["usuario"]) && isset($_COOKIE["recordar_usu"])) {
 function validarDatos($datos) {
 	$errores = [];
 
-	if (trim($datos["nombre"]) === "") {
-		$errores["nombre"] = "Che amigo, te falto el nombre";
-	}
-	if (strlen(trim($datos["username"])) <= 8) {
-		$errores["username"] = "Ey, guarda que el username tiene que tener más de 8 caracteres";
+	if (strlen(trim($datos["username"])) <= 4) {
+		$errores["username"] = "El usuario debe tener minimo 4 caracteres ";
 	}
 	$email = trim($datos["mail"]);
 
 	if ($email === "") {
-		$errores["mail"] = "Che amigo, te falto el mail";
+		$errores["mail"] = "E-mail obligatorio";
 	} else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		$errores["mail"] = "Mal formato de email";
+		$errores["mail"] = "formato de e-mail invalio";
 	}
 	else if (dameUnoPorMail($email) != NULL) {
-		$errores["mail"] = "Ese mail ya existe";
+		$errores["mail"] = "El e-mail ya existe";
 	}
 
-
-	if (!is_numeric($_POST["edad"])) {
-		$errores["edad"] = "La edad debe ser un número";
-	}
 
 	$pass = trim($_POST["password"]);
 	$cpass = trim($_POST["cpassword"]);
 	if ($pass === "") {
-		$errores["password"] = "Llena la pass";
+		$errores["password"] = "Debes elegir una contraseña";
 	}
 	if ($cpass === "") {
-		$errores["cpassword"] = "Llena la cpass";
+		$errores["cpassword"] = "Repite tu contraseña";
 	}
 	if ($pass != "" && $cpass != "" && $pass != $cpass) {
-		$errores["password"] = "Flaco, hiciste todo mal (con las contraseñas)";
+		$errores["password"] = "Las contraseñas no coinciden";
 	}
 
 
@@ -56,7 +49,7 @@ function guardarImagen($upload, $errores) {
 			$ext = pathinfo($nombre, PATHINFO_EXTENSION);
 
 			if ($ext != "png" && $ext != "jpg") {
-				$errores[] = "No acepto la extension";
+				$errores[] = "extension invalida";
 			}
 			else {
 				$miArchivo = dirname(__FILE__);
@@ -67,17 +60,16 @@ function guardarImagen($upload, $errores) {
 			}
 		} else
 		{
-			$errores[] = "Ey, no pude subir la foto :(";
+			$errores[] = "La foto no fue guardada";
 		}
 		return $errores;
 	}
 
 	function crearUsuario($datos) {
 		$usuario = [
-			"nombre" => $datos["nombre"],
+			
 			"username" => $datos["username"],
 			"mail" => $datos["mail"],
-			"edad" => $datos["edad"],
 			"password" => password_hash($datos["password"], PASSWORD_DEFAULT),
 			"pais" => $datos["pais"]
 		];
@@ -164,12 +156,12 @@ function guardarImagen($upload, $errores) {
 		$email = trim($datos["mail"]);
 
 		if ($email === "") {
-			$errores["mail"] = "Che amigo, te falto el mail";
+			$errores["mail"] = "Ingresar e-mail";
 		} else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-			$errores["mail"] = "Mal formato de email";
+			$errores["mail"] = "E-mail invalido";
 		}
 		else if (dameUnoPorMail($email) == NULL) {
-			$errores["mail"] = "Ese mail no existe en nuestra base";
+			$errores["mail"] = "El e-mail no existe";
 		} else {
 			// SIGNIFICA QUE EL USUARIO EXISTE
 
